@@ -16,8 +16,5 @@ dos$Global_active_power <- as.numeric(dos$Global_active_power)
 
 ## plotting
 png(filename="plot2.png", width=480, height = 480 )
-
-with(dos, plot(Global_active_power~todo, type='l', 
-                            xlab = "", ylab="Global Active Power (kilowatts)" ))
-
+with(dos, plot(Global_active_power~todo, type='l', xlab = "", ylab="Global Active Power (kilowatts)" ))
 dev.off()

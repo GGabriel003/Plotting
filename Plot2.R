@@ -15,7 +15,7 @@ dos <- dato[which(dato$Date %in% as.Date(c("2007-02-01", "2007-02-02"))),]
 dos$Global_active_power <- as.numeric(dos$Global_active_power)
 
 ## plotting
-png(filename="plot.png", width=480, height = 480 )
+png(filename="plot2.png", width=480, height = 480 )
 
 with(dos, plot(Global_active_power~todo, type='l', 
                             xlab = "", ylab="Global Active Power (kilowatts)" ))

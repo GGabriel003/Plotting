@@ -14,6 +14,5 @@ dia2$Global_active_power <- as.numeric(dia2$Global_active_power)
 png(filename="plot1.png", width=480, height = 480 )
 par(las=1)
 # plotting
-hist(dia2$Global_active_power, xlab = "Global Active Power (kilowatts)", 
-     ylab = "Frequency", main = "Global Active Power", col = "red")
+hist(dia2$Global_active_power, xlab = "Global Active Power (kilowatts)", ylab = "Frequency", main = "Global Active Power", col = "red")
 dev.off()
